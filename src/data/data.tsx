@@ -2,17 +2,13 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
-  CalendarIcon,
   FlagIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -44,8 +40,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'LEO',
+  description: "Leonardo Perez Resume written by NextJS",
 };
 
 /**
@@ -69,24 +65,22 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Hi👋🏻 this is Leo`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Colombia based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
+        at <strong className="text-stone-100">Upwork Inc</strong>.<br/>
+        I have completed my bachelor's degree in computer science from Antioquia Technological Institute
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+      In my free time, I enjoy <strong className="text-stone-100">Hiking</strong> and <strong className="text-stone-100">Gardening</strong>. I always love spending a lot of time with my <strong className="text-stone-100">Family</strong>.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '../images/leo.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +98,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I have a broad vision regarding all the software development process. My experience in different sectors of the industry allows me to create integral solutions that provide value to the process.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Medellin, Colombia', Icon: MapIcon},
+    // {label: 'Age', text: '46', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Columbian / Spanish', Icon: FlagIcon},
+    {label: 'Interests', text: 'Hiking, Gardening', Icon: SparklesIcon},
+    {label: 'Study', text: 'Tecnológico de Antioquia', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Koala Solutions Inc', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -126,15 +118,36 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
+        level: 9,
       },
       {
         name: 'Spanish',
-        level: 3,
+        level: 10,
+      },
+    ],
+  },
+  {
+    name: 'Mobile development',
+    skills: [
+      {
+        name: 'Swift',
+        level: 10,
+      },
+      {
+        name: 'React Native',
+        level: 9,
+      },
+      {
+        name: 'Flutter',
+        level: 9,
+      },
+      {
+        name: 'Xamarin',
+        level: 8,
+      },
+      {
+        name: 'Ionic',
+        level: 8,
       },
     ],
   },
@@ -159,33 +172,20 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
-        level: 8,
+        name: 'PHP',
+        level: 9,
       },
       {
-        name: 'Rust',
+        name: 'Node.js',
+        level: 9,
+      },
+      {
+        name: 'Python',
         level: 5,
       },
       {
         name: 'Golang',
         level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
       },
     ],
   },
@@ -196,58 +196,58 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'DMS Mobile',
+    description: 'Software solutions for the Automotive and retail industry in the Latin American market',
+    url: 'https://apps.apple.com/us/app/dms-mobile/id6446655129',
     image: porfolioImage8,
   },
   {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Keyboard Extension - iOS',
+    description: 'https://apps.apple.com/app/id1497411513',
+    url: 'https://github.com/ghleoperez/Keyboard',
+    image: porfolioImage2,
+  },
+  {
+    title: 'ELK Product Inc',
+    description: 'iOS - House Control App',
+    url: 'https://apps.apple.com/us/app/elk-connect/id1565150595',
+    image: porfolioImage3,
+  },
+  {
+    title: 'Health & Fitness',
+    description: 'Carbs Calory Calculator / Ionic Framework',
+    url: 'https://apps.apple.com/us/app/lazy-keto-diet-meal-planner/id1466180330',
+    image: porfolioImage4,
+  },
+  {
+    title: 'LuckyCloud App',
+    description: 'Cloud Storage Management (iOS, Android)',
+    url: 'https://apps.apple.com/us/app/luckycloud/id1599646505',
+    image: porfolioImage5,
+  },
+  {
+    title: 'WorkOut App',
+    description: 'GetToWorkOut, Ionic Framework, Google Firebase',
+    url: 'https://apps.apple.com/us/app/gettoworkout-fitness-app/id1151050035',
+    image: porfolioImage6,
+  },
+  {
+    title: 'ELD App',
+    description: 'The Hutch ELD is the First and Only ELD based on PAYD (Pay-As-You-Drive) model. It meets all FMCSA ELD requirements and is listed on FMCSA registered ELD. The Hutch ELD is powered by Hutch Systems and is trusted by clients across USA and Canada',
+    url: 'https://apps.apple.com/us/app/hutch-eld/id1639929044',
+    image: porfolioImage7,
+  },
+  {
+    title: 'Pet Website',
+    description: 'FitPUP',
+    url: 'https://fitpupapp.com/',
     image: porfolioImage9,
+  },
+  {
+    title: 'iOS - VFX Plates App',
+    description: '360 Video player using RealityKit, ARKit, SwiftUI',
+    url: 'https://www.youtube.com/watch?v=QnzF7fOlpXs&list=WL&index=12&ab_channel=DavidC.SmithDP',
+    image: porfolioImage1,
   },
   {
     title: 'Project title 10',
@@ -283,24 +283,42 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'Jan 1999 - Sep 2004',
+    location: 'DMS SAS',
+    title: 'Lead Developer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Software solutions for the Automotive and retail industry in the Latin American market.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: '2004 - Present',
+    location: 'Koala Solutions',
+    title: 'Software Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        This is my brand, I have develop software for more than 20 years in different sectors
+      </p>
+    ),
+  },
+  {
+    date: 'July 2023 - August 2023',
+    location: 'Plate Pros',
+    title: 'iOS Developer',
+    content: (
+      <p>
+        Created 360-degree camera app using Swift/SwiftUI, RealityKit, ARKit etc.
+      </p>
+    ),
+  },
+  {
+    date: 'Jan 2023 - August 2023',
+    location: 'Hutch Systems',
+    title: 'Junior Bug Fixer',
+    content: (
+      <p>
+        Fix mobile bugs concerning with ELD of Vehicles [Xamarin, Swift, Java projects]
       </p>
     ),
   },
@@ -313,17 +331,17 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Eric Ellis',
+      text: 'Leonardo\'s iOS development skills were exceptional for our PlatePro project. His problem-solving, communication, and teamwork were commendable. A reliable and talented developer who delivered high-quality results. Highly recommended!!',
+      image: '../images/eric.jpg',
+    },//https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg
+    {
+      name: 'Ivan Moyanov',
+      text: 'Leonardo is a highly skilled and dedicated professional who consistently delivers exceptional results. He possesses a deep understanding of his field and maintains a positive and collaborative attitude. Leonardo\'s excellent communication and problem-solving abilities have been invaluable to this project. Overall, he is recommended for his professionalism, expertise, and enthusiasm, making him a valuable asset to any project or organization.',
+      image: '../images/ivan.jpg',//https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
+      name: 'Gary Dhaliwal',
       text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
@@ -340,23 +358,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'happyleonardo77@gmail.com',
+      href: 'mailto:happyleonardo77@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Medellin, Colombia',
+      href: 'https://www.google.com/maps/place/Medell%C3%ADn,+Medellin,+Antioquia,+Colombia/@6.244197,-75.6637847,12z',
     },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
+    // {
+    //   type: ContactType.Instagram,
+    //   text: '@tbakerx',
+    //   href: 'https://www.instagram.com/tbakerx/',
+    // },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'ghleoperez',
+      href: 'https://github.com/ghleoperez',
     },
   ],
 };
@@ -365,9 +383,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/ghleoperez'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/5415768/leonardo-perez'},
+  // {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
+  // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
+  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
