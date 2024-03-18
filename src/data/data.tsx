@@ -102,7 +102,7 @@ export const aboutData: About = {
   aboutItems: [
     {label: 'Location', text: 'Medellin, Colombia', Icon: MapIcon},
     // {label: 'Age', text: '46', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Columbian / Spanish', Icon: FlagIcon},
+    {label: 'Nationality', text: 'Colombian / Spanish', Icon: FlagIcon},
     {label: 'Interests', text: 'Hiking, Gardening', Icon: SparklesIcon},
     {label: 'Study', text: 'Tecnológico de Antioquia', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Koala Solutions Inc', Icon: BuildingOffice2Icon},
