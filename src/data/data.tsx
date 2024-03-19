@@ -1,6 +1,6 @@
 import {
   AcademicCapIcon,
-  ArrowDownTrayIcon,
+  // ArrowDownTrayIcon,
   BuildingOffice2Icon,
   FlagIcon,
   MapIcon,
@@ -10,17 +10,19 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+// import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+// import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+// import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import DropChatProfile from '../images/portfolio/DropChatProfile.png';
+// import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+// import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import Sciples from '../images/portfolio/sciple_app.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -65,7 +67,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `Hi👋🏻 this is Leo`,
+  name: `Hi, My name is Leonardo`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -74,17 +76,23 @@ export const heroData: Hero = {
         I have completed my bachelor's degree in computer science from Antioquia Technological Institute
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        My greatest strength is a combination of <strong className="text-stone-100">enthusiasm</strong> and <strong className="text-stone-100">persistence</strong>.<br/>
+        My work ethic won't let me settle for less than my best. I am very passionate about work.<br/>
+        As an individual who values <b>collaboration</b> and <b>forward-thinking</b>,<br/>I am capable of working independently as well as being an effective team player within your organization.<br/>
+        As a skilled <b>problem-solver</b> and a <b>fast-learner</b>, I can quickly learn new skills and provide good solutions.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
       In my free time, I enjoy <strong className="text-stone-100">Hiking</strong> and <strong className="text-stone-100">Gardening</strong>. I always love spending a lot of time with my <strong className="text-stone-100">Family</strong>.
       </p>
     </>
   ),
   actions: [
-    {
-      href: '../images/leo.pdf',
-      text: 'Resume',
-      primary: true,
-      Icon: ArrowDownTrayIcon,
-    },
+    // {
+    //   href: '../images/leo.pdf',
+    //   text: 'Resume',
+    //   primary: true,
+    //   Icon: ArrowDownTrayIcon,
+    // },
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
@@ -100,9 +108,9 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I have a broad vision regarding all the software development process. My experience in different sectors of the industry allows me to create integral solutions that provide value to the process.`,
   aboutItems: [
-    {label: 'Location', text: 'Medellin, Colombia', Icon: MapIcon},
+    {label: 'Location', text: 'Medellín, Colombia', Icon: MapIcon},
     // {label: 'Age', text: '46', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Colombian / Spanish', Icon: FlagIcon},
+    {label: 'Nationality', text: 'Colombian / Spanish / English', Icon: FlagIcon},
     {label: 'Interests', text: 'Hiking, Gardening', Icon: SparklesIcon},
     {label: 'Study', text: 'Tecnológico de Antioquia', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Koala Solutions Inc', Icon: BuildingOffice2Icon},
@@ -159,12 +167,12 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
+        name: 'Vue',
+        level: 8,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'Angular',
+        level: 7,
       },
     ],
   },
@@ -180,11 +188,15 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
+        name: 'C#',
+        level: 10,
+      },
+      {
         name: 'Python',
         level: 5,
       },
       {
-        name: 'Golang',
+        name: 'Ruby',
         level: 4,
       },
     ],
@@ -196,20 +208,32 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'DMS Mobile',
+    title: 'DMS Mobile - .NET MAUI',
     description: 'Software solutions for the Automotive and retail industry in the Latin American market',
     url: 'https://apps.apple.com/us/app/dms-mobile/id6446655129',
     image: porfolioImage8,
   },
   {
-    title: 'Keyboard Extension - iOS',
-    description: 'https://apps.apple.com/app/id1497411513',
-    url: 'https://github.com/ghleoperez/Keyboard',
+    title: 'Lovely Keyboard - Swift',
+    description: 'iOS Keyboard Extension App - https://github.com/ghleoperez/Keyboard Provided the base logic code',
+    url: 'https://apps.apple.com/app/id1497411513',
     image: porfolioImage2,
   },
   {
+    title: 'DropChat - Swift',
+    description: 'Connect and bond — Mentors know things, places and your university',
+    url: 'https://apps.apple.com/us/app/dropchats/id6443835631',
+    image: DropChatProfile,
+  },
+  {
+    title: 'Sciples - Social Networking, Bible',
+    description: 'React Native, Laravel, NodeJS, Angular16',
+    url: 'https://apps.apple.com/us/app/dropchats/id6443835631',
+    image: Sciples,
+  },
+  {
     title: 'ELK Product Inc',
-    description: 'iOS - House Control App',
+    description: 'Swift - House Control App',
     url: 'https://apps.apple.com/us/app/elk-connect/id1565150595',
     image: porfolioImage3,
   },
@@ -231,36 +255,24 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://apps.apple.com/us/app/gettoworkout-fitness-app/id1151050035',
     image: porfolioImage6,
   },
-  {
-    title: 'ELD App',
-    description: 'The Hutch ELD is the First and Only ELD based on PAYD (Pay-As-You-Drive) model. It meets all FMCSA ELD requirements and is listed on FMCSA registered ELD. The Hutch ELD is powered by Hutch Systems and is trusted by clients across USA and Canada',
-    url: 'https://apps.apple.com/us/app/hutch-eld/id1639929044',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Pet Website',
-    description: 'FitPUP',
-    url: 'https://fitpupapp.com/',
-    image: porfolioImage9,
-  },
-  {
-    title: 'iOS - VFX Plates App',
-    description: '360 Video player using RealityKit, ARKit, SwiftUI',
-    url: 'https://www.youtube.com/watch?v=QnzF7fOlpXs&list=WL&index=12&ab_channel=DavidC.SmithDP',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
+  // {
+  //   title: 'Pet Website',
+  //   description: 'FitPUP',
+  //   url: 'https://fitpupapp.com/',
+  //   image: porfolioImage9,
+  // },
+  // {
+  //   title: 'iOS - VFX Plates App',
+  //   description: '360 Video player using RealityKit, ARKit, SwiftUI',
+  //   url: 'https://www.youtube.com/watch?v=QnzF7fOlpXs&list=WL&index=12&ab_channel=DavidC.SmithDP',
+  //   image: porfolioImage1,
+  // },
+  // {
+  //   title: 'ELD App',
+  //   description: 'The Hutch ELD is the First and Only ELD based on PAYD (Pay-As-You-Drive) model. It meets all FMCSA ELD requirements and is listed on FMCSA registered ELD. The Hutch ELD is powered by Hutch Systems and is trusted by clients across USA and Canada',
+  //   url: 'https://apps.apple.com/us/app/hutch-eld/id1639929044',
+  //   image: porfolioImage7,
+  // },
 ];
 
 /**
@@ -268,15 +280,9 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
+    date: 'Jan 1993 - Dec 1995',
+    location: 'Tecnológico de Antioquia',
+    title: 'Bachelor\'s Degree in Computer Science',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
 ];
@@ -334,11 +340,11 @@ export const testimonial: TestimonialSection = {
       name: 'Eric Ellis',
       text: 'Leonardo\'s iOS development skills were exceptional for our PlatePro project. His problem-solving, communication, and teamwork were commendable. A reliable and talented developer who delivered high-quality results. Highly recommended!!',
       image: '../images/eric.jpg',
-    },//https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg
+    },
     {
       name: 'Ivan Moyanov',
       text: 'Leonardo is a highly skilled and dedicated professional who consistently delivers exceptional results. He possesses a deep understanding of his field and maintains a positive and collaborative attitude. Leonardo\'s excellent communication and problem-solving abilities have been invaluable to this project. Overall, he is recommended for his professionalism, expertise, and enthusiasm, making him a valuable asset to any project or organization.',
-      image: '../images/ivan.jpg',//https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg
+      image: '../images/ivan.jpg',
     },
     {
       name: 'Gary Dhaliwal',
@@ -363,7 +369,7 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'Medellin, Colombia',
+      text: 'Medellín, Colombia',
       href: 'https://www.google.com/maps/place/Medell%C3%ADn,+Medellin,+Antioquia,+Colombia/@6.244197,-75.6637847,12z',
     },
     // {
